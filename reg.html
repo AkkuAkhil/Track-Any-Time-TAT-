@@ -1,0 +1,54 @@
+<html>
+<head><title>index</title>
+<style>
+form {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+	font-size: 50px;
+	font-style: bold;
+	color: gold;
+}
+input[type=button] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+	font-size: 25px;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[name=txt] {
+	background-color: silver;
+    border: none;
+    color: black;
+	font-size: 25 px;
+	font-style: bold;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+</style>
+<script Language="Javascript">
+function go()
+ {
+   var a=document.frm.txt.value;
+   if(a==100)
+    {
+	  alert("hello");
+	  window.location="aio1.html";
+	}
+	else
+	  alert("sry");
+ }
+</script>
+</head>
+<body background="bg.png">
+<form name="frm">
+<center><hr>
+aadhar&nbsp;&nbsp;&nbsp;<input name="txt">
+<br>
+<input type="button" value="submit" onClick="go();" >
+<hr></form>
+</body></html>

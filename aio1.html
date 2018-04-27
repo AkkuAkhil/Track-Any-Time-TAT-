@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<title>TAT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right"><img src="logo.png" width="40" height="40"></span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4"><center>
+      <img src="logo.png" width="200" height="200">
+    </center></div>
+    <div class="w3-col s8 w3-bar">
+      <span>Welcome, <strong>to TAT</strong></span><br>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h2>TRACK ANY TIME</h2>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
+    <a href="reg.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Register</a>
+    <a href="chat1.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Community Link</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  Logout</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+  <!-- Header -->
+  <header class="w3-container" style="padding-top:22px">
+    <h5><b><i class="fa fa-dashboard"></i>TRACK ANY TIME</b></h5>
+  </header>
+
+  <div class="w3-row-padding w3-margin-bottom">
+    <a href="https://services.india.gov.in/"><div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>12</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Services</h4>
+      </div>
+    </div></a>
+    <div class="w3-quarter">
+      <div class="w3-container w3-blue w3-padding-16">
+        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>8</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Taken</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-teal w3-padding-16">
+        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>4</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Available</h4>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>1</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Pending</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-panel">
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third">
+        <h5>കുട്ടൻ പിള്ള </h5>
+        <img src="p1.jpg" style="width:100%" alt="Google Regional Map">
+      </div>
+      <div class="w3-twothird">
+		<ul class="leftmenu">
+                                <li><a href="https://services.india.gov.in/service/listing?cat_id=1&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/cc560b7209548c22_icon1.png" alt=""> Education and Learning</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=5&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/f319111eccfe2ff6_icon5.png" alt=""> Health and Wellness</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=3&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/8501724c802fc1b6_icon3.png" alt=""> Electricity, Water and Local services</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=7&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/a54dde591513fb44_icon7.png" alt=""> Money and Taxes</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=2&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/0bc2dc1155adc14a_icon2.png" alt=""> Jobs</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=10&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/1b1fa44339937d85_icon10.png" alt=""> Justice, Law and Grievances</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=6&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/7a612fc792a687ad_icon6.png" alt=""> Travel and Tourism</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=16&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/abee4fac2745ea91_icon16.png" alt=""> Business and Self-employed</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=4&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/df1d62940f23897f_icon4.png" alt=""> Births, Deaths, Marriages and Child care</a></li>
+                                        <li><a href="https://services.india.gov.in/service/listing?cat_id=8&amp;ln=en"><img src="https://services.india.gov.in/uploads/category/icons/home/019db16b4efca125_icon8.png" alt=""> Pension and Benefits</a></li>
+                                </ul>
+        </table>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Details</h5>
+    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+      <tr>
+        <td>Rank</td>
+        <td>11546</td>
+      </tr>
+      <tr>
+        <td>Department</td>
+        <td>1 - Producer , 1 - Food</td>
+      </tr>
+	   <tr>
+        <td>Product</td>
+        <td>Wheat</td>
+      </tr>
+      <tr>
+        <td>No of peoples in same category</td>
+        <td>130</td>
+      </tr>
+      <tr>
+        <td>Community Link</td>
+        <td><a href="chat1.html">	Click here</a></td>
+      </tr>
+      <tr>
+        <td>Working Status</td>
+        <td>Community Based</td>
+      </tr>
+    </table><br>
+    <button class="w3-button w3-dark-grey">More Details  <i class="fa fa-arrow-right"></i></button>
+  </div>
+  <hr>
+  </div>
+  <br>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-16 w3-light-grey">
+    <h4>TAT.inc</h4>
+    <p>Powered by tat.com</p>
+  </footer>
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
